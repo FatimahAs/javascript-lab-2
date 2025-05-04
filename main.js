@@ -59,3 +59,59 @@ if (dish !== "pizza") {
 } else {
     console.log("Large pizza with extra cheese is ready!");
 }
+
+
+
+var eatsPlants = false;
+var eatsAnimals = true;
+
+var category = eatsPlants ? eatsAnimals ? "omnivore" : "herbivore" : eatsAnimals ? "carnivore" :
+    undefined;
+
+console.log(category);
+
+
+
+
+
+var musicians = 0;
+
+if (musicians <= 0) {
+    console.log("not a group");
+} else if (musicians == 1) {
+    console.log("solo");
+} else if (musicians == 2) {
+    console.log("duet");
+} else if (musicians == 3) {
+    console.log("trio");
+} else if (musicians == 4) {
+    console.log("quartet");
+} else {
+    console.log("this is a large group");
+}
+
+
+
+
+var room = "billiards room";
+var suspect = "Mrs. Sparr";
+var weapon = "";
+var solved = false;
+
+
+if (room === "dining room" && suspect === "Mr. Parkes") {
+    weapon = "knife";
+    solved = true;
+} else if (room === "gallery" && suspect === "Ms. Van Cleve") {
+    weapon = "trophy";
+    solved = true;
+} else if (room === "billiards room" && suspect === "Mrs. Sparr") {
+    weapon = "pool stick";
+    solved = true;
+} else if (room === "ballroom" && suspect === "Mr. Kalehoff") {
+    weapon = "poison";
+    solved = true;
+}
+if (solved) {
+    console.log(`${suspect} did it in the ${room} with the ${weapon}!`);
+}
